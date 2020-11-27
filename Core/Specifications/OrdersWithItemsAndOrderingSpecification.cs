@@ -20,4 +20,4 @@ namespace Core.Specifications
             AddInclude(o => o.DeliveryMethod);
         }
     }
-} 
+}

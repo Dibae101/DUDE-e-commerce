@@ -93,3 +93,4 @@ C:\Users\samar\Desktop\Demo\skinet\api\bin\Debug\netcoreapp3.1\Microsoft.Identit
 C:\Users\samar\Desktop\Demo\skinet\api\bin\Debug\netcoreapp3.1\Microsoft.IdentityModel.Tokens.dll
 C:\Users\samar\Desktop\Demo\skinet\api\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
 C:\Users\samar\Desktop\Demo\skinet\api\bin\Debug\netcoreapp3.1\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\samar\Desktop\Demo\skinet\api\bin\Debug\netcoreapp3.1\Stripe.net.dll

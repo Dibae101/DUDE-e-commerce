@@ -37,4 +37,4 @@ namespace Infrastructure.Data
             return await GetBasketAsync(basket.Id);
         }
     }
-} 
+}

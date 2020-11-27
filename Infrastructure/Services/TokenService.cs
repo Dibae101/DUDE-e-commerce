@@ -45,4 +45,4 @@ namespace Infrastructure.Services
             return tokenHandler.WriteToken(token);
         }
     }
-} 
+}

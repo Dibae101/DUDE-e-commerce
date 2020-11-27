@@ -23,4 +23,4 @@ namespace Core.Entities.OrderAggregate
         public string State { get; set; }
         public string Zipcode { get; set; }
     }
-} 
+}

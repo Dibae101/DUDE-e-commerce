@@ -6,9 +6,8 @@ using Microsoft.EntityFrameworkCore;
 namespace Infrastructure.Data
 {
     public class SpecificationEvaluator<TEntity> where TEntity : BaseEntity
-    { 
-        public static IQueryable<TEntity> GetQuery(IQueryable<TEntity> inputQuery,
-        ISpecification<TEntity> spec)
+    {
+        public static IQueryable<TEntity> GetQuery(IQueryable<TEntity> inputQuery, ISpecification<TEntity> spec)
         {
             var query = inputQuery;
 
@@ -33,6 +32,7 @@ namespace Infrastructure.Data
             }
 
             query = spec.Includes.Aggregate(query, (current, include) => current.Include(include));
+
             return query;
         }
     }
