@@ -28,7 +28,6 @@ namespace Infrastructure.Services
         public async Task<CustomerBasket> CreateOrUpdatePaymentIntent(string basketId)
         {
             StripeConfiguration.ApiKey = _config["StripeSettings:SecretKey"];
-            
 
             var basket = await _basketRepository.GetBasketAsync(basketId);
 
@@ -102,7 +101,7 @@ namespace Infrastructure.Services
 
             if (order == null) return null;
             
-            order.Status = OrderStatus.PaymentRecevied;
+            order.Status = OrderStatus.PaymentReceived;
             _unitOfWork.Repository<Order>().Update(order);
 
             await _unitOfWork.Complete();

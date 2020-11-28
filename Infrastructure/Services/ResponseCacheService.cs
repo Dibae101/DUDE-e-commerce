@@ -26,9 +26,9 @@ namespace Infrastructure.Services
                 PropertyNamingPolicy = JsonNamingPolicy.CamelCase
             };
 
-            var serialisedResponse = JsonSerializer.Serialize(response, options);
+            var serializedResponse = JsonSerializer.Serialize(response, options);
+            await _database.StringSetAsync(cacheKey, serializedResponse, timeToLive);
 
-            await _database.StringSetAsync(cacheKey, serialisedResponse, timeToLive);
         }
 
         public async Task<string> GetCachedResponseAsync(string cacheKey)
